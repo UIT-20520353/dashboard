@@ -1,0 +1,14 @@
+.sidebar {
+  width: 300px;
+  height: calc(100vh);
+  background-color: pink;
+
+  display: none;
+  float: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    display: block;
+  }
+}
