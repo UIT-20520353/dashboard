@@ -1,3 +1,71 @@
+.sidebar__header {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+
+  width: 430px;
+  height: 100px;
+
+  border-bottom: 2px solid #e1e5ed;
+}
+
+.sidebar__header .left button {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 999px;
+
+  background-color: #fff;
+
+  border: 2px solid #e1e5ed;
+
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.031372549);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar__header .left p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #4d5e80;
+}
+
+.sidebar__header button {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 999px;
+
+  background-color: #fff;
+
+  border: 2px solid #e1e5ed;
+
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.031372549);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar__header .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 35px;
+}
+
+.sidebar__header {
+  display: none; /* bật tắt menu 1200px */
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 25px;
+}
+
 .header {
   width: 100%;
   height: 100px;
@@ -172,6 +240,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    background-color: #edeff2;
+  }
+
   .btn-account {
     display: none;
   }
